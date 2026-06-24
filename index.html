@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JardinageBalcon.fr — Jardinage balcon : guides, comparatifs et conseils</title>
+<meta name="description" content="Conseils jardinage balcon, comparatifs et bons plans Amazon">
+<link rel="canonical" href="https://jardinagebalcon.fr/">
+<meta property="og:title" content="JardinageBalcon.fr — Jardinage balcon : guides, comparatifs et conseils">
+<meta property="og:description" content="Conseils jardinage balcon, comparatifs et bons plans Amazon">
+<meta property="og:url" content="https://jardinagebalcon.fr/">
+<meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"JardinageBalcon.fr","url":"https://jardinagebalcon.fr","description":"Conseils jardinage balcon, comparatifs et bons plans Amazon"}
+</script>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --green: #2d6a4f;
+  --green-light: #52b788;
+  --text: #1a1a2e;
+  --muted: #555;
+  --bg: #f8faf9;
+  --white: #ffffff;
+  --border: #e0e8e4;
+  --max: 860px;
+}
+body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; font-size: 17px; }
+a { color: var(--green); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* NAV */
+nav { background: var(--green); padding: 0 1.5rem; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+nav .brand { color: #fff; font-weight: 700; font-size: 1.1rem; letter-spacing: -0.3px; }
+nav .brand span { color: var(--green-light); }
+nav ul { list-style: none; display: flex; gap: 1.5rem; }
+nav ul li a { color: rgba(255,255,255,0.85); font-size: 0.9rem; }
+nav ul li a:hover { color: #fff; text-decoration: none; }
+
+/* HERO */
+.hero { background: linear-gradient(135deg, var(--green) 0%, #1b4332 100%); color: #fff; padding: 3.5rem 1.5rem 3rem; text-align: center; }
+.hero h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 800; margin-bottom: 0.75rem; }
+.hero p { font-size: 1.05rem; color: rgba(255,255,255,0.82); max-width: 560px; margin: 0 auto 1.5rem; }
+.hero .cta-btn { display: inline-block; background: var(--green-light); color: #fff; font-weight: 700; padding: 0.75rem 2rem; border-radius: 6px; font-size: 1rem; }
+.hero .cta-btn:hover { background: #40916c; text-decoration: none; }
+
+/* CONTAINER */
+.container { max-width: var(--max); margin: 0 auto; padding: 2rem 1.25rem; }
+
+/* CARDS GRID */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.25rem; margin-top: 2rem; }
+.card { background: var(--white); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; transition: box-shadow 0.2s; }
+.card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.09); }
+.card-body { padding: 1.25rem; }
+.card-cat { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--green); letter-spacing: 0.5px; margin-bottom: 0.4rem; }
+.card h2 { font-size: 1.05rem; font-weight: 700; margin-bottom: 0.5rem; line-height: 1.4; }
+.card p { font-size: 0.88rem; color: var(--muted); margin-bottom: 1rem; }
+.card .read-more { display: inline-block; font-size: 0.85rem; font-weight: 700; color: var(--green); }
+
+/* ARTICLE */
+.article-wrap { max-width: var(--max); margin: 0 auto; padding: 2rem 1.25rem 3rem; }
+.article-meta { font-size: 0.82rem; color: var(--muted); margin-bottom: 2rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem; }
+.article-body h1 { font-size: clamp(1.5rem, 3.5vw, 2rem); font-weight: 800; margin-bottom: 1rem; line-height: 1.3; }
+.article-body h2 { font-size: 1.35rem; font-weight: 700; margin: 2rem 0 0.75rem; color: var(--green); }
+.article-body h3 { font-size: 1.1rem; font-weight: 700; margin: 1.5rem 0 0.5rem; }
+.article-body p { margin-bottom: 1rem; }
+.article-body ul, .article-body ol { margin: 0.75rem 0 1rem 1.5rem; }
+.article-body li { margin-bottom: 0.35rem; }
+.article-body table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.9rem; }
+.article-body th { background: var(--green); color: #fff; padding: 0.65rem 0.85rem; text-align: left; }
+.article-body td { padding: 0.6rem 0.85rem; border-bottom: 1px solid var(--border); }
+.article-body tr:nth-child(even) td { background: #f1f8f4; }
+.article-body a[href*="amazon"] { font-weight: 700; color: #e47911; }
+.article-body a[href*="amazon"]:hover { color: #c56a00; }
+.article-body em { color: var(--muted); font-size: 0.85rem; }
+.breadcrumb { font-size: 0.82rem; color: var(--muted); margin-bottom: 1.5rem; }
+.breadcrumb a { color: var(--green); }
+
+/* FOOTER */
+footer { background: var(--green); color: rgba(255,255,255,0.75); text-align: center; padding: 1.5rem; font-size: 0.82rem; margin-top: 3rem; }
+footer a { color: rgba(255,255,255,0.9); }
+
+@media (max-width: 600px) {
+  .grid { grid-template-columns: 1fr; }
+  nav ul { display: none; }
+}
+</style>
+</head>
+<body>
+<nav>
+  <a class="brand" href="/">JardinageBalcon<span>.fr</span></a>
+  <ul>
+    <li><a href="/jardiниeres/">Jardinières</a></li>
+    <li><a href="/plantes-balcon/">Plantes</a></li>
+    <li><a href="/potager-balcon/">Potager</a></li>
+    <li><a href="/outils-accessoires/">Outils</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <h1>Jardiner sur son balcon, enfin simplement</h1>
+  <p>Guides pratiques, comparatifs produits et bons plans Amazon pour transformer votre balcon en jardin.</p>
+  <a class="cta-btn" href="#articles">Voir tous les guides</a>
+</div>
+<div class="container" id="articles">
+  <h2 style="font-size:1.3rem;font-weight:700;">Derniers guides</h2>
+  <div class="grid">
+<div class="card">
+  <div class="card-body">
+    <div class="card-cat">Conseils Pratiques</div>
+    <h2>Jardinage Balcon Débutant 2026 — Le Guide Complet (Tout ce qu'il Faut Savoir)</h2>
+    <p>Jardinage Balcon 2026 — Guide Complet pour Débutants
+
+Vous avez un balcon et l'envie d'y faire pousser quelque chose ? C...</p>
+    <a class="read-more" href="/articles/jardinage-balcon-guide-complet/">Lire le guide →</a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <div class="card-cat">Outils Accessoires</div>
+    <h2>Meilleur Arrosage Automatique Balcon 2026 — Top 5 Systèmes Testés</h2>
+    <p>Meilleur Arrosage Automatique Balcon 2026 — Top 5 Systèmes
+
+Partir en vacances sans que vos plantes de balcon ne meurent...</p>
+    <a class="read-more" href="/articles/meilleur-arrosage-automatique-balcon/">Lire le guide →</a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <div class="card-cat">Potager Balcon</div>
+    <h2>Meilleur Potager Balcon 2026 — Top 5 Kits pour Débutants</h2>
+    <p>Meilleur Potager Balcon 2026 — Top 5 Kits pour Débutants
+
+Faire pousser ses propres tomates, courgettes, herbes aromatiq...</p>
+    <a class="read-more" href="/articles/meilleur-potager-balcon/">Lire le guide →</a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <div class="card-cat">Jardiниeres</div>
+    <h2>Meilleure Jardinière Balcon 2026 — Top 7 Testées et Comparées</h2>
+    <p>Meilleure Jardinière Balcon 2026 — Top 7 Testées et Comparées
+
+Choisir une jardinière pour son balcon n'est pas si simpl...</p>
+    <a class="read-more" href="/articles/meilleure-jardiniere-balcon/">Lire le guide →</a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <div class="card-cat">Plantes Balcon</div>
+    <h2>Meilleures Fleurs de Balcon 2026 — 15 Variétés qui Fleurissent Tout l'Été</h2>
+    <p>Meilleures Fleurs de Balcon 2026 — 15 Variétés qui Fleurissent Tout l'Été
+
+Un balcon fleuri de mai à octobre sans effort...</p>
+    <a class="read-more" href="/articles/meilleures-fleurs-balcon/">Lire le guide →</a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <div class="card-cat">Plantes Balcon</div>
+    <h2>Plantes Balcon Paris 2026 — Les Meilleures pour le Climat Parisien</h2>
+    <p>Plantes Balcon Paris 2026 — Les Meilleures pour le Climat Parisien
+
+Le climat parisien (zone USDA 8a) combine des hivers...</p>
+    <a class="read-more" href="/articles/meilleures-plantes-balcon-paris/">Lire le guide →</a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <div class="card-cat">Plantes Balcon</div>
+    <h2>Meilleures Plantes pour Balcon 2026 — Guide Complet par Exposition</h2>
+    <p>Meilleures Plantes pour Balcon 2026 — Guide Complet par Exposition
+
+Quelle plante choisir pour son balcon en 2026 ? La r...</p>
+    <a class="read-more" href="/articles/meilleures-plantes-balcon/">Lire le guide →</a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <div class="card-cat">Plantes Balcon</div>
+    <h2>Meilleures Plantes pour Terrasse 2026 — Guide Complet</h2>
+    <p>Meilleures Plantes pour Terrasse 2026 — Guide Complet
+
+Une terrasse offre généralement plus d'espace qu'un balcon — et d...</p>
+    <a class="read-more" href="/articles/meilleures-plantes-terrasse/">Lire le guide →</a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <div class="card-cat">Plantes Balcon</div>
+    <h2>Plantes Balcon Hiver — 12 Variétés Fleuries Résistantes au Gel</h2>
+    <p>Plantes Balcon Hiver — 12 Variétés Fleuries pour Braver le Gel
+
+Quand les géraniums et fuchsias ont été rentrés, le balc...</p>
+    <a class="read-more" href="/articles/plantes-balcon-hiver/">Lire le guide →</a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <div class="card-cat">Plantes Balcon</div>
+    <h2>Plantes Balcon Plein Soleil — 15 Résistantes à la Canicule (2026)</h2>
+    <p>Plantes Balcon Plein Soleil — 15 Résistantes à la Canicule
+
+Un balcon plein sud ou exposé plein ouest dès 14h, c'est int...</p>
+    <a class="read-more" href="/articles/plantes-balcon-plein-soleil/">Lire le guide →</a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <div class="card-cat">Plantes Balcon</div>
+    <h2>Plantes Balcon Sans Entretien — 10 Variétés qui Poussent Seules</h2>
+    <p>Plantes de Balcon Sans Entretien — 10 Variétés qui Poussent Seules
+
+Pas le temps d'arroser tous les jours. Pas envie de...</p>
+    <a class="read-more" href="/articles/plantes-balcon-sans-entretien/">Lire le guide →</a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <div class="card-cat">Outils Accessoires</div>
+    <h2>Prix Jardinage Extérieur 2026 — Budget Complet pour Balcon et Terrasse</h2>
+    <p>Prix Jardinage Extérieur 2026 — Budget Complet pour Balcon et Terrasse
+
+Combien coûte vraiment d'aménager un balcon ou u...</p>
+    <a class="read-more" href="/articles/prix-jardin-exterieur/">Lire le guide →</a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <div class="card-cat">Jardiниeres</div>
+    <h2>Prix Jardinière Balcon 2026 — À Quoi S'Attendre Selon le Budget</h2>
+    <p>Prix Jardinière Balcon 2026 — À Quoi S'Attendre Selon le Budget
+
+Combien faut-il prévoir pour équiper un balcon en jardi...</p>
+    <a class="read-more" href="/articles/prix-jardiniere-balcon/">Lire le guide →</a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <div class="card-cat">Conseils Pratiques</div>
+    <h2>Prix Plantes d'Extérieur 2026 — Ce que Coûtent Vraiment les Plantes de Balcon</h2>
+    <p>Prix Plantes d'Extérieur 2026 — Ce que Coûtent Vraiment les Plantes de Balcon
+
+Entre les prix en jardinerie, les ventes...</p>
+    <a class="read-more" href="/articles/prix-plante-exterieur/">Lire le guide →</a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <div class="card-cat">Plantes Balcon</div>
+    <h2>Quelle Plante Balcon Nord ? Les 12 Meilleures pour l'Ombre (2026)</h2>
+    <p>Quelle Plante pour un Balcon Nord ? Les 12 Meilleures pour l'Ombre
+
+Un balcon exposé au nord — ombre quasi permanente, m...</p>
+    <a class="read-more" href="/articles/quelle-plante-balcon-nord/">Lire le guide →</a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <div class="card-cat">Plantes Balcon</div>
+    <h2>Quelle Plante pour Balcon Ouest ? 10 Idées pour l'Après-Midi Ensoleillé</h2>
+    <p>Quelle Plante pour un Balcon Ouest ? 10 Idées pour l'Exposition Mi-Soleil
+
+Un balcon exposé à l'ouest reçoit le soleil à...</p>
+    <a class="read-more" href="/articles/quelle-plante-balcon-ouest/">Lire le guide →</a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <div class="card-cat">Plantes Balcon</div>
+    <h2>Quelle Plante pour Balcon Paris ? Guide Spécial Île-de-France 2026</h2>
+    <p>Quelle Plante pour Balcon Paris ? Guide Spécial Île-de-France 2026
+
+Choisir la bonne plante pour son balcon parisien dem...</p>
+    <a class="read-more" href="/articles/quelle-plante-balcon-paris/">Lire le guide →</a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <div class="card-cat">Plantes Balcon</div>
+    <h2>Quelle Plante pour Balcon Plein Sud ? 12 Résistantes à la Chaleur</h2>
+    <p>Quelle Plante pour Balcon Plein Sud ? 12 Résistantes à la Chaleur
+
+Un balcon plein sud est le plus contraignant : soleil...</p>
+    <a class="read-more" href="/articles/quelle-plante-balcon-plein-sud/">Lire le guide →</a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <div class="card-cat">Plantes Balcon</div>
+    <h2>Plantes Balcon Exposition Est — 10 Idées pour le Soleil du Matin</h2>
+    <p>Plantes Balcon Exposition Est — 10 Idées pour le Soleil du Matin
+
+Un balcon exposé à l'est reçoit le soleil de l'aube ju...</p>
+    <a class="read-more" href="/articles/quelles-plantes-balcon-exposition-est/">Lire le guide →</a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <div class="card-cat">Plantes Balcon</div>
+    <h2>Quelles Plantes pour Balcon en Hiver ? 12 Idées Résistantes au Froid</h2>
+    <p>Quelles Plantes pour Balcon en Hiver ? 12 Idées Résistantes au Froid
+
+Un balcon vide en hiver est une occasion manquée....</p>
+    <a class="read-more" href="/articles/quelles-plantes-balcon-hiver/">Lire le guide →</a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <div class="card-cat">Plantes Balcon</div>
+    <h2>Quelles Plantes pour Balcon Nord ? 10 Solutions pour l'Ombre Totale</h2>
+    <p>Quelles Plantes pour Balcon Nord ? 10 Solutions pour l'Ombre Totale
+
+Un balcon orienté au nord ne reçoit aucun rayon de...</p>
+    <a class="read-more" href="/articles/quelles-plantes-balcon-nord/">Lire le guide →</a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <div class="card-cat">Plantes Balcon</div>
+    <h2>Quelles Plantes pour Balcon Paris ? Top 10 Recommandées pour l'Île-de-France</h2>
+    <p>Quelles Plantes pour Balcon Paris ? Top 10 Recommandées pour l'Île-de-France
+
+Paris a ses propres contraintes pour les p...</p>
+    <a class="read-more" href="/articles/quelles-plantes-balcon-paris/">Lire le guide →</a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <div class="card-cat">Plantes Balcon</div>
+    <h2>Quelles Plantes pour Balcon Plein Soleil ? 15 Variétés Résistantes à la Chaleur</h2>
+    <p>Quelles Plantes pour Balcon Plein Soleil ? 15 Variétés Résistantes à la Chaleur
+
+Un balcon plein soleil reçoit plus de 6...</p>
+    <a class="read-more" href="/articles/quelles-plantes-balcon-plein-soleil/">Lire le guide →</a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <div class="card-cat">Plantes Balcon</div>
+    <h2>Quelles Plantes pour Balcon Plein Sud ? Sélection 2026 pour Exposition Maximale</h2>
+    <p>Quelles Plantes pour Balcon Plein Sud ? Sélection 2026 pour Exposition Maximale
+
+Un balcon plein sud est exposé au solei...</p>
+    <a class="read-more" href="/articles/quelles-plantes-balcon-plein-sud/">Lire le guide →</a>
+  </div>
+</div></div>
+</div>
+<footer>
+  <p>© 2026 JardinageBalcon.fr — Guide jardinage balcon urbain</p>
+  <p style="margin-top:0.4rem"><a href="/mentions-legales/">Mentions légales</a> · <a href="/politique-confidentialite/">Confidentialité</a></p>
+  <p style="margin-top:0.4rem;font-size:0.75rem">Ce site participe au Programme Partenaires d'Amazon EU, un programme d'affiliation permettant à des sites de percevoir une rémunération grâce à la création de liens vers Amazon.fr.</p>
+</footer>
+</body>
+</html>
