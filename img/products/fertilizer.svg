@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="fz-body" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#52b788"/>
+      <stop offset=".5" stop-color="#2d6a4f"/>
+      <stop offset="1" stop-color="#1f4d39"/>
+    </linearGradient>
+    <linearGradient id="fz-bodyL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#000000" stop-opacity=".14"/>
+    </linearGradient>
+    <linearGradient id="fz-cap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e3e9ee"/>
+      <stop offset="1" stop-color="#aeb8c0"/>
+    </linearGradient>
+    <linearGradient id="fz-leafA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#74c46a"/>
+      <stop offset="1" stop-color="#2d6a4f"/>
+    </linearGradient>
+    <linearGradient id="fz-leafB" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#52b788"/>
+      <stop offset="1" stop-color="#2d6a4f"/>
+    </linearGradient>
+    <radialGradient id="g-shadow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#3d4d56" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#3d4d56" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <ellipse cx="200" cy="346" rx="96" ry="20" fill="url(#g-shadow)"/>
+
+  <!-- cap -->
+  <rect x="180" y="78" width="40" height="34" rx="6" fill="url(#fz-cap)"/>
+  <rect x="183" y="80" width="8" height="30" rx="4" fill="#ffffff" opacity=".4"/>
+  <rect x="176" y="106" width="48" height="14" rx="5" fill="#cfd6dc"/>
+
+  <!-- bottle body -->
+  <path d="M152 134 Q152 118 168 118 L232 118 Q248 118 248 134 L256 312 Q256 332 236 332 L164 332 Q144 332 144 312 Z" fill="url(#fz-body)"/>
+  <path d="M152 134 Q152 118 168 118 L232 118 Q248 118 248 134 L256 312 Q256 332 236 332 L164 332 Q144 332 144 312 Z" fill="url(#fz-bodyL)"/>
+  <!-- highlight strip -->
+  <path d="M168 132 Q164 220 170 318" stroke="#ffffff" stroke-opacity=".3" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <!-- white label panel -->
+  <rect x="158" y="180" width="84" height="118" rx="8" fill="#ffffff"/>
+  <rect x="158" y="180" width="84" height="118" rx="8" fill="#000" opacity=".02"/>
+
+  <!-- healthy leaf emblem -->
+  <g>
+    <path d="M200 200 C176 208 162 232 168 258 C194 252 208 226 200 200 Z" fill="url(#fz-leafA)"/>
+    <path d="M200 200 C224 208 238 232 232 258 C206 252 192 226 200 200 Z" fill="url(#fz-leafB)"/>
+    <path d="M200 202 L200 256" stroke="#2d6a4f" stroke-width="2.5" opacity=".5"/>
+    <path d="M200 218 L186 226 M200 232 L186 240 M200 218 L214 226 M200 232 L214 240" stroke="#2d6a4f" stroke-width="1.6" opacity=".4"/>
+  </g>
+  <!-- label info bars -->
+  <rect x="170" y="272" width="60" height="6" rx="3" fill="#52b788"/>
+  <rect x="178" y="284" width="44" height="5" rx="2.5" fill="#aeb8c0" opacity=".6"/>
+</svg>

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sl-bag" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c79a6b"/>
+      <stop offset=".5" stop-color="#b07a48"/>
+      <stop offset="1" stop-color="#96623a"/>
+    </linearGradient>
+    <linearGradient id="sl-bagL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#000000" stop-opacity=".12"/>
+    </linearGradient>
+    <linearGradient id="sl-inside" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6b4e35"/>
+      <stop offset="1" stop-color="#4a3322"/>
+    </linearGradient>
+    <linearGradient id="sl-soil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5a4230"/>
+      <stop offset="1" stop-color="#3a2818"/>
+    </linearGradient>
+    <linearGradient id="sl-blade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e3e9ee"/>
+      <stop offset="1" stop-color="#aeb8c0"/>
+    </linearGradient>
+    <linearGradient id="sl-handle" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#74c46a"/>
+      <stop offset="1" stop-color="#2d6a4f"/>
+    </linearGradient>
+    <radialGradient id="g-shadow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#3d4d56" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#3d4d56" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <ellipse cx="200" cy="346" rx="118" ry="20" fill="url(#g-shadow)"/>
+
+  <!-- spilled soil pile -->
+  <path d="M96 332 Q130 300 200 304 Q272 300 308 332 Q260 348 200 346 Q138 348 96 332 Z" fill="url(#sl-soil)"/>
+  <g fill="#3a2818" opacity=".5">
+    <circle cx="120" cy="328" r="3"/><circle cx="150" cy="334" r="2.5"/>
+    <circle cx="250" cy="332" r="3"/><circle cx="280" cy="328" r="2.5"/>
+    <circle cx="200" cy="338" r="2.5"/>
+  </g>
+
+  <!-- kraft bag body -->
+  <path d="M150 160 L262 160 Q272 160 272 170 L272 312 Q272 320 262 320 L150 320 Q140 320 140 312 L140 170 Q140 160 150 160 Z" fill="url(#sl-bag)"/>
+  <path d="M150 160 L262 160 Q272 160 272 170 L272 312 Q272 320 262 320 L150 320 Q140 320 140 312 L140 170 Q140 160 150 160 Z" fill="url(#sl-bagL)"/>
+  <!-- paper crease -->
+  <path d="M180 162 L176 318" stroke="#000" stroke-opacity=".07" stroke-width="3"/>
+  <path d="M236 162 L240 318" stroke="#ffffff" stroke-opacity=".12" stroke-width="3"/>
+  <!-- product label band (green) -->
+  <rect x="148" y="222" width="116" height="48" rx="4" fill="#2d6a4f"/>
+  <rect x="148" y="222" width="116" height="10" rx="4" fill="#52b788"/>
+  <path d="M206 232 q14 -2 18 10 q-16 4 -18 -10 Z" fill="#74c46a"/>
+  <path d="M204 232 q-14 -2 -18 10 q16 4 18 -10 Z" fill="#52b788"/>
+  <!-- open folded top -->
+  <path d="M138 160 L274 160 L262 142 Q200 134 150 142 Z" fill="url(#sl-inside)"/>
+  <path d="M150 142 Q200 134 262 142 L256 150 Q200 144 156 150 Z" fill="#000" opacity=".18"/>
+  <!-- overflowing soil mound at top -->
+  <path d="M158 152 Q200 122 248 152 Q220 162 200 160 Q176 162 158 152 Z" fill="url(#sl-soil)"/>
+
+  <!-- trowel -->
+  <g transform="rotate(20 296 250)">
+    <rect x="288" y="232" width="16" height="44" rx="7" fill="url(#sl-handle)"/>
+    <rect x="291" y="234" width="4" height="40" rx="2" fill="#ffffff" opacity=".3"/>
+    <rect x="293" y="270" width="6" height="14" fill="#aeb8c0"/>
+    <path d="M280 282 Q296 278 312 282 Q310 318 296 326 Q282 318 280 282 Z" fill="url(#sl-blade)"/>
+    <path d="M288 284 Q296 282 304 284 Q302 312 296 318 Q290 312 288 284 Z" fill="#ffffff" opacity=".25"/>
+  </g>
+</svg>

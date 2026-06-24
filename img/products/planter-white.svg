@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="pw-body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e3e9ee"/>
+    </linearGradient>
+    <linearGradient id="pw-bodyL" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".5"/>
+      <stop offset=".4" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#aeb8c0" stop-opacity=".4"/>
+    </linearGradient>
+    <linearGradient id="pw-rim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#dbe2e8"/>
+    </linearGradient>
+    <linearGradient id="pw-soil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5a4230"/>
+      <stop offset="1" stop-color="#4a3322"/>
+    </linearGradient>
+    <linearGradient id="pw-leafA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#74c46a"/>
+      <stop offset="1" stop-color="#2d6a4f"/>
+    </linearGradient>
+    <linearGradient id="pw-leafB" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#52b788"/>
+      <stop offset="1" stop-color="#2d6a4f"/>
+    </linearGradient>
+    <linearGradient id="pw-leafC" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8fd47f"/>
+      <stop offset="1" stop-color="#3f8b62"/>
+    </linearGradient>
+    <radialGradient id="g-shadow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#3d4d56" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#3d4d56" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <ellipse cx="200" cy="338" rx="118" ry="22" fill="url(#g-shadow)"/>
+
+  <g>
+    <path d="M158 180 C120 166 96 122 106 86 C140 108 158 142 166 180 Z" fill="url(#pw-leafB)"/>
+    <path d="M156 182 C130 160 116 122 122 92 C146 118 162 150 164 182 Z" fill="url(#pw-leafA)"/>
+    <path d="M160 182 C172 150 184 116 182 84 C168 110 158 150 158 182 Z" fill="url(#pw-leafC)"/>
+    <path d="M242 180 C280 166 304 122 294 86 C260 108 242 142 234 180 Z" fill="url(#pw-leafA)"/>
+    <path d="M244 182 C270 160 284 122 278 92 C254 118 238 150 236 182 Z" fill="url(#pw-leafB)"/>
+    <path d="M240 182 C228 150 216 116 218 84 C232 110 242 150 242 182 Z" fill="url(#pw-leafC)"/>
+    <path d="M200 184 C176 168 160 138 158 112 C182 128 196 156 204 184 Z" fill="url(#pw-leafB)" opacity=".95"/>
+    <path d="M200 184 C224 168 240 138 242 112 C218 128 204 156 196 184 Z" fill="url(#pw-leafA)" opacity=".95"/>
+    <path d="M200 186 C196 152 198 116 206 90 C218 120 213 162 207 186 Z" fill="url(#pw-leafC)"/>
+  </g>
+
+  <path d="M108 186 L292 186 L278 304 Q277 314 267 314 L133 314 Q123 314 122 304 Z" fill="url(#pw-body)"/>
+  <path d="M108 186 L292 186 L278 304 Q277 314 267 314 L133 314 Q123 314 122 304 Z" fill="url(#pw-bodyL)"/>
+  <path d="M104 174 L296 174 Q300 174 300 178 L300 188 Q300 192 296 192 L104 192 Q100 192 100 188 L100 178 Q100 174 104 174 Z" fill="url(#pw-rim)"/>
+  <rect x="100" y="174" width="200" height="3" rx="1.5" fill="#ffffff" opacity=".6"/>
+  <path d="M122 304 L278 304 L276 312 Q277 314 267 314 L133 314 Q123 314 124 312 Z" fill="#aeb8c0" opacity=".35"/>
+  <path d="M112 186 L288 186 L286 198 Q200 210 114 198 Z" fill="url(#pw-soil)"/>
+</svg>

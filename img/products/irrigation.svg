@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="ir-pot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d98c63"/>
+      <stop offset="1" stop-color="#c1684a"/>
+    </linearGradient>
+    <linearGradient id="ir-potL" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".22"/>
+      <stop offset=".4" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity=".15"/>
+    </linearGradient>
+    <linearGradient id="ir-rim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e09a72"/>
+      <stop offset="1" stop-color="#c1684a"/>
+    </linearGradient>
+    <linearGradient id="ir-tube" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#48555e"/>
+      <stop offset="1" stop-color="#2b363d"/>
+    </linearGradient>
+    <linearGradient id="ir-soil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5a4230"/>
+      <stop offset="1" stop-color="#4a3322"/>
+    </linearGradient>
+    <linearGradient id="leafA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#74c46a"/>
+      <stop offset="1" stop-color="#2d6a4f"/>
+    </linearGradient>
+    <linearGradient id="leafB" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#52b788"/>
+      <stop offset="1" stop-color="#2d6a4f"/>
+    </linearGradient>
+    <linearGradient id="leafC" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8fd47f"/>
+      <stop offset="1" stop-color="#3f8b62"/>
+    </linearGradient>
+    <radialGradient id="ir-drop" cx=".38" cy=".32" r=".75">
+      <stop offset="0" stop-color="#cdeaff"/>
+      <stop offset=".5" stop-color="#5cb3f0"/>
+      <stop offset="1" stop-color="#2a7fc4"/>
+    </radialGradient>
+    <radialGradient id="g-shadow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#3d4d56" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#3d4d56" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <ellipse cx="200" cy="350" rx="116" ry="20" fill="url(#g-shadow)"/>
+
+  <!-- full plant, centered -->
+  <g>
+    <path d="M200 214 C162 200 138 158 148 122 C180 144 196 178 206 214 Z" fill="url(#leafB)"/>
+    <path d="M200 214 C238 200 262 158 252 122 C220 144 204 178 194 214 Z" fill="url(#leafA)"/>
+    <path d="M198 216 C168 200 152 168 150 142 C172 158 188 184 202 216 Z" fill="url(#leafB)" opacity=".95"/>
+    <path d="M202 216 C232 200 248 168 250 142 C228 158 212 184 198 216 Z" fill="url(#leafA)" opacity=".95"/>
+    <path d="M200 218 C194 178 196 130 206 102 C220 134 215 180 207 218 Z" fill="url(#leafC)"/>
+    <path d="M198 218 C190 182 184 144 188 114 C202 144 204 182 202 218 Z" fill="url(#leafA)"/>
+  </g>
+
+  <!-- pot centered -->
+  <path d="M150 226 L250 226 L238 318 Q237 326 229 326 L171 326 Q163 326 162 318 Z" fill="url(#ir-pot)"/>
+  <path d="M150 226 L250 226 L238 318 Q237 326 229 326 L171 326 Q163 326 162 318 Z" fill="url(#ir-potL)"/>
+  <path d="M142 212 L258 212 Q262 212 262 216 L260 226 Q260 230 256 230 L144 230 Q140 230 140 226 L138 216 Q138 212 142 212 Z" fill="url(#ir-rim)"/>
+  <rect x="144" y="213" width="112" height="3.5" rx="1.7" fill="#ffffff" opacity=".28"/>
+  <path d="M154 226 L246 226 L244 236 Q200 246 156 236 Z" fill="url(#ir-soil)"/>
+
+  <!-- main supply tube running across base -->
+  <path d="M44 320 Q120 328 200 322 Q280 316 356 322" fill="none" stroke="url(#ir-tube)" stroke-width="12" stroke-linecap="round"/>
+  <path d="M44 320 Q120 328 200 322 Q280 316 356 322" fill="none" stroke="#ffffff" stroke-opacity=".15" stroke-width="3" stroke-linecap="round"/>
+  <!-- riser tube rising behind pot up to the soil emitter -->
+  <path d="M300 318 Q316 290 312 256 Q310 240 246 234" fill="none" stroke="url(#ir-tube)" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="300" cy="318" r="8" fill="#3d4d56"/>
+  <circle cx="300" cy="318" r="3" fill="#1f282d"/>
+
+  <!-- soil-stake emitter sitting in the pot -->
+  <rect x="222" y="226" width="14" height="18" rx="4" fill="#2d6a4f"/>
+  <rect x="224" y="228" width="5" height="7" rx="2" fill="#74c46a"/>
+  <!-- ground emitters on the supply line -->
+  <g>
+    <rect x="113" y="306" width="14" height="16" rx="4" fill="#2d6a4f"/>
+    <rect x="115" y="308" width="5" height="6" rx="2" fill="#74c46a"/>
+    <rect x="276" y="306" width="14" height="16" rx="4" fill="#2d6a4f"/>
+    <rect x="278" y="308" width="5" height="6" rx="2" fill="#74c46a"/>
+  </g>
+
+  <!-- hero glossy drop falling from the soil emitter onto the soil -->
+  <path d="M222 248 C222 264 236 274 238 288 C254 286 262 272 254 256 C248 246 238 241 234 240 C228 242 222 242 222 248 Z" fill="url(#ir-drop)"/>
+  <ellipse cx="234" cy="261" rx="4.5" ry="7" fill="#ffffff" opacity=".75"/>
+  <!-- small drop at left ground emitter -->
+  <path d="M113 326 C113 338 122 346 123 356 C135 354 140 344 134 333 C130 326 123 322 119 321 C116 323 113 322 113 326 Z" fill="url(#ir-drop)"/>
+  <ellipse cx="120" cy="336" rx="3" ry="5" fill="#ffffff" opacity=".7"/>
+</svg>

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="pa-body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#566069"/>
+      <stop offset="1" stop-color="#3d4d56"/>
+    </linearGradient>
+    <linearGradient id="pa-bodyL" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".2"/>
+      <stop offset=".4" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity=".14"/>
+    </linearGradient>
+    <linearGradient id="pa-rim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6e7882"/>
+      <stop offset="1" stop-color="#48555e"/>
+    </linearGradient>
+    <linearGradient id="pa-soil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5a4230"/>
+      <stop offset="1" stop-color="#4a3322"/>
+    </linearGradient>
+    <linearGradient id="pa-leafA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#74c46a"/>
+      <stop offset="1" stop-color="#2d6a4f"/>
+    </linearGradient>
+    <linearGradient id="pa-leafB" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#52b788"/>
+      <stop offset="1" stop-color="#2d6a4f"/>
+    </linearGradient>
+    <linearGradient id="pa-leafC" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8fd47f"/>
+      <stop offset="1" stop-color="#3f8b62"/>
+    </linearGradient>
+    <radialGradient id="g-shadow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#3d4d56" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#3d4d56" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <ellipse cx="200" cy="336" rx="100" ry="20" fill="url(#g-shadow)"/>
+
+  <!-- single full plant -->
+  <g>
+    <path d="M200 194 C160 180 134 134 144 96 C178 120 196 156 206 194 Z" fill="url(#pa-leafB)"/>
+    <path d="M200 194 C240 180 266 134 256 96 C222 120 204 156 194 194 Z" fill="url(#pa-leafA)"/>
+    <path d="M198 196 C166 178 148 144 146 116 C170 134 188 162 202 196 Z" fill="url(#pa-leafB)" opacity=".95"/>
+    <path d="M202 196 C234 178 252 144 254 116 C230 134 212 162 198 196 Z" fill="url(#pa-leafA)" opacity=".95"/>
+    <path d="M200 198 C194 156 196 108 206 80 C220 112 215 158 207 198 Z" fill="url(#pa-leafC)"/>
+    <path d="M198 198 C190 162 184 124 188 94 C202 124 204 162 202 198 Z" fill="url(#pa-leafA)"/>
+  </g>
+
+  <!-- body (taller, simpler pot) -->
+  <path d="M132 196 L268 196 L256 308 Q255 318 245 318 L155 318 Q145 318 144 308 Z" fill="url(#pa-body)"/>
+  <path d="M132 196 L268 196 L256 308 Q255 318 245 318 L155 318 Q145 318 144 308 Z" fill="url(#pa-bodyL)"/>
+  <!-- rim -->
+  <path d="M126 184 L274 184 Q278 184 278 188 L278 198 Q278 202 274 202 L126 202 Q122 202 122 198 L122 188 Q122 184 126 184 Z" fill="url(#pa-rim)"/>
+  <rect x="122" y="184" width="156" height="4" rx="2" fill="#ffffff" opacity=".22"/>
+  <!-- subtle matte grooves -->
+  <path d="M150 220 L250 220" stroke="#000" stroke-opacity=".07" stroke-width="2"/>
+  <path d="M152 250 L248 250" stroke="#000" stroke-opacity=".07" stroke-width="2"/>
+  <!-- soil -->
+  <path d="M136 196 L264 196 L262 208 Q200 220 138 208 Z" fill="url(#pa-soil)"/>
+</svg>

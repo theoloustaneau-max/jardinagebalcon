@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="pt-pot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d98c63"/>
+      <stop offset="1" stop-color="#c1684a"/>
+    </linearGradient>
+    <linearGradient id="pt-potL" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".25"/>
+      <stop offset=".4" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity=".15"/>
+    </linearGradient>
+    <linearGradient id="pt-rim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e09a72"/>
+      <stop offset="1" stop-color="#c1684a"/>
+    </linearGradient>
+    <linearGradient id="pt-soil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5a4230"/>
+      <stop offset="1" stop-color="#4a3322"/>
+    </linearGradient>
+    <linearGradient id="leafA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#74c46a"/>
+      <stop offset="1" stop-color="#2d6a4f"/>
+    </linearGradient>
+    <linearGradient id="leafB" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#52b788"/>
+      <stop offset="1" stop-color="#2d6a4f"/>
+    </linearGradient>
+    <linearGradient id="leafC" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8fd47f"/>
+      <stop offset="1" stop-color="#3f8b62"/>
+    </linearGradient>
+    <radialGradient id="g-shadow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#3d4d56" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#3d4d56" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <ellipse cx="200" cy="346" rx="100" ry="20" fill="url(#g-shadow)"/>
+
+  <!-- full layered foliage -->
+  <g>
+    <!-- back leaves (darker) -->
+    <path d="M200 214 C150 200 112 150 122 100 C166 122 196 168 206 214 Z" fill="url(#leafB)"/>
+    <path d="M200 214 C250 200 288 150 278 100 C234 122 204 168 194 214 Z" fill="url(#leafA)"/>
+    <!-- mid leaves -->
+    <path d="M198 216 C156 192 132 142 142 104 C176 132 196 174 204 216 Z" fill="url(#leafA)"/>
+    <path d="M202 216 C244 192 268 142 258 104 C224 132 204 174 196 216 Z" fill="url(#leafB)"/>
+    <!-- side fans -->
+    <path d="M196 214 C158 206 126 178 116 144 C156 158 184 184 200 214 Z" fill="url(#leafB)" opacity=".95"/>
+    <path d="M204 214 C242 206 274 178 284 144 C244 158 216 184 200 214 Z" fill="url(#leafA)" opacity=".95"/>
+    <!-- center upright leaves (brightest) -->
+    <path d="M200 218 C194 168 196 110 206 74 C220 112 215 174 207 218 Z" fill="url(#leafC)"/>
+    <path d="M198 218 C190 176 184 132 188 96 C202 130 204 176 202 218 Z" fill="url(#leafA)"/>
+    <path d="M202 218 C212 178 220 138 218 100 C206 132 200 178 200 218 Z" fill="url(#leafB)"/>
+    <!-- veins -->
+    <path d="M203 210 C200 168 202 118 206 86" stroke="#2d6a4f" stroke-width="2" fill="none" opacity=".35"/>
+    <path d="M155 196 C168 178 184 192 198 210" stroke="#2d6a4f" stroke-width="1.6" fill="none" opacity=".3"/>
+    <path d="M245 196 C232 178 216 192 202 210" stroke="#2d6a4f" stroke-width="1.6" fill="none" opacity=".3"/>
+  </g>
+
+  <!-- terracotta pot -->
+  <path d="M148 224 L252 224 L238 318 Q237 326 229 326 L171 326 Q163 326 162 318 Z" fill="url(#pt-pot)"/>
+  <path d="M148 224 L252 224 L238 318 Q237 326 229 326 L171 326 Q163 326 162 318 Z" fill="url(#pt-potL)"/>
+  <path d="M140 210 L260 210 Q264 210 264 214 L262 224 Q262 228 258 228 L142 228 Q138 228 138 224 L136 214 Q136 210 140 210 Z" fill="url(#pt-rim)"/>
+  <rect x="142" y="211" width="116" height="4" rx="2" fill="#ffffff" opacity=".28"/>
+  <path d="M152 224 L248 224 L246 234 Q200 244 154 234 Z" fill="url(#pt-soil)"/>
+</svg>

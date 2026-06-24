@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="wc-body" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e3e9ee"/>
+      <stop offset=".35" stop-color="#aeb8c0"/>
+      <stop offset=".55" stop-color="#cfd6dc"/>
+      <stop offset="1" stop-color="#6e7882"/>
+    </linearGradient>
+    <linearGradient id="wc-bodyTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f2f5f7"/>
+      <stop offset="1" stop-color="#c2cace"/>
+    </linearGradient>
+    <linearGradient id="wc-metal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e3e9ee"/>
+      <stop offset=".5" stop-color="#aeb8c0"/>
+      <stop offset="1" stop-color="#6e7882"/>
+    </linearGradient>
+    <radialGradient id="g-shadow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#3d4d56" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#3d4d56" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <ellipse cx="200" cy="332" rx="120" ry="20" fill="url(#g-shadow)"/>
+
+  <!-- handle (arched, over top) -->
+  <path d="M150 150 Q150 96 206 96 Q258 96 262 140" fill="none" stroke="url(#wc-metal)" stroke-width="16" stroke-linecap="round"/>
+  <path d="M150 150 Q150 96 206 96 Q258 96 262 140" fill="none" stroke="#ffffff" stroke-opacity=".3" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- spout (tucked behind body) -->
+  <path d="M150 200 Q80 190 40 150 L58 138 Q92 172 154 178 Z" fill="url(#wc-metal)"/>
+  <path d="M150 200 Q80 190 40 150 L58 138 Q92 172 154 178 Z" fill="#ffffff" opacity=".12"/>
+  <!-- rose head -->
+  <ellipse cx="46" cy="146" rx="14" ry="20" transform="rotate(-32 46 146)" fill="url(#wc-bodyTop)"/>
+  <ellipse cx="46" cy="146" rx="9" ry="14" transform="rotate(-32 46 146)" fill="#6e7882"/>
+  <g fill="#3d4d56">
+    <circle cx="42" cy="139" r="1.4"/><circle cx="48" cy="142" r="1.4"/>
+    <circle cx="44" cy="147" r="1.4"/><circle cx="50" cy="150" r="1.4"/>
+    <circle cx="46" cy="155" r="1.4"/>
+  </g>
+
+  <!-- main body -->
+  <path d="M140 168 L264 168 Q278 168 276 184 L264 300 Q262 316 246 316 L162 316 Q146 316 144 300 L132 184 Q130 168 140 168 Z" fill="url(#wc-body)"/>
+  <!-- top cap -->
+  <ellipse cx="202" cy="168" rx="62" ry="14" fill="url(#wc-bodyTop)"/>
+  <ellipse cx="202" cy="166" rx="48" ry="9" fill="#8b969e"/>
+  <!-- zinc seam ring -->
+  <path d="M138 244 Q200 256 268 244" stroke="#6e7882" stroke-opacity=".5" stroke-width="2.5" fill="none"/>
+  <path d="M138 240 Q200 252 268 240" stroke="#ffffff" stroke-opacity=".35" stroke-width="2" fill="none"/>
+  <!-- specular highlight -->
+  <path d="M158 184 Q156 250 168 304" stroke="#ffffff" stroke-opacity=".55" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M222 182 Q224 246 220 300" stroke="#ffffff" stroke-opacity=".25" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- back handle strap -->
+  <path d="M258 176 Q300 184 296 240 Q294 280 268 300" fill="none" stroke="url(#wc-metal)" stroke-width="15" stroke-linecap="round"/>
+  <path d="M258 176 Q300 184 296 240 Q294 280 268 300" fill="none" stroke="#ffffff" stroke-opacity=".25" stroke-width="4" stroke-linecap="round"/>
+</svg>
