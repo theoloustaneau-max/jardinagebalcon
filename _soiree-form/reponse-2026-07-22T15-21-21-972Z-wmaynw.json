@@ -1,0 +1,15 @@
+{
+  "_meta": {
+    "test": true
+  },
+  "nom_app": "TEST envoi",
+  "age_confirme": true,
+  "public": [
+    "etudiants",
+    "couples"
+  ],
+  "intensite": [
+    "soft",
+    "chaud"
+  ]
+}
